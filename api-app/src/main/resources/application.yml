@@ -1,0 +1,21 @@
+# spring.application.name=api-app
+
+spring:
+  profiles:
+    active:
+      - local
+  datasource:
+    hikari:
+      driver-class-name: org.mariadb.jdbc.Driver
+      jdbc-url: jdbc:maraidb://localhost:3306/api_db
+      username: root
+      password:
+  flyway:
+    user: root
+    password:
+
+  application:
+    name: api-app
+
+server:
+  port: 8080
